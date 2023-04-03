@@ -1,0 +1,48 @@
+<resources>
+    <string name="app_name">SimpleWeatherApp</string>
+    <string name="min">min</string>
+    <string name="max">max</string>
+    <string name="avr">avr</string>
+    <string name="Location">Location</string>
+    <string name="wind_speed_mu_ms">%1$s m/s</string>
+    <string name="wind_speed_mu_km">%1$s km/h</string>
+    <string name="pressure_mu_hpa">%1$s hPa</string>
+    <string name="pressure_mu_mmHg">%1$s mmHg</string>
+    <string name="provide_description">All data provided by Open Weather Map</string>
+    <string name="temperature">Temperature</string>
+    <string name="wind_speed">Wend speed</string>
+    <string name="pressure">Pressure</string>
+    <string name="provide_by">Provide by</string>
+    <string name="settings">Settings</string>
+    <string name="feels_like">Feels like</string>
+    <string name="morn">morn</string>
+    <string name="day">day</string>
+    <string name="eve">eve</string>
+    <string name="night">night</string>
+    <string name="humidity">humidity</string>
+    <string name="wind_dir">Wind direction</string>
+    <string name="sunrise">Sunrise</string>
+    <string name="sunset">Sunset</string>
+    <string name="km_h">km/h</string>
+    <string name="m_s">m/s</string>
+    <string name="mmHg">mmHg</string>
+    <string name="hPa">hPa</string>
+    <string name="daySetting">Light</string>
+    <string name="nightSetting">Dark</string>
+    <string name="theme">Theme</string>
+    <string name="chooseYourself">Choose yourself</string>
+    <string name="chooseSystems">Device theme</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+
+
+
+    <string name="degree_symbol" translatable="false">%1$s\u00B0</string>
+    <string name="C" translatable="false">C°</string>
+    <string name="F" translatable="false">F°</string>
+    <string name="comma" translatable="false">, %1$s</string>
+    <string name="source_provider" translatable="false">Source provider</string>
+
+
+
+</resources>

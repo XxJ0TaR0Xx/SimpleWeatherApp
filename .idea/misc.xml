@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/Danissimmo/AndroidStudioProjects/SimpleWeatherApp/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.202" />
+        <entry key="..\:/Users/Danissimmo/AndroidStudioProjects/SimpleWeatherApp/app/src/main/res/drawable/bg_main_bottom_sheets.xml" value="0.228" />
+        <entry key="..\:/Users/Danissimmo/AndroidStudioProjects/SimpleWeatherApp/app/src/main/res/drawable/bg_main_bottom_sheets_swiper.xml" value="0.202" />
+        <entry key="..\:/Users/Danissimmo/AndroidStudioProjects/SimpleWeatherApp/app/src/main/res/drawable/bg_menu_favorites_list.xml" value="0.202" />
+        <entry key="..\:/Users/Danissimmo/AndroidStudioProjects/SimpleWeatherApp/app/src/main/res/drawable/bg_menu_predictions_list.xml" value="0.202" />
+        <entry key="..\:/Users/Danissimmo/AndroidStudioProjects/SimpleWeatherApp/app/src/main/res/drawable/city_item_favorite_selector.xml" value="0.202" />
+        <entry key="..\:/Users/Danissimmo/AndroidStudioProjects/SimpleWeatherApp/app/src/main/res/drawable/ic_01d.xml" value="0.202" />
+        <entry key="..\:/Users/Danissimmo/AndroidStudioProjects/SimpleWeatherApp/app/src/main/res/drawable/ic_01n.xml" value="0.202" />
+        <entry key="..\:/Users/Danissimmo/AndroidStudioProjects/SimpleWeatherApp/app/src/main/res/drawable/ic_02d.xml" value="0.202" />
+        <entry key="..\:/Users/Danissimmo/AndroidStudioProjects/SimpleWeatherApp/app/src/main/res/drawable/ic_02n.xml" value="0.202" />
+        <entry key="..\:/Users/Danissimmo/AndroidStudioProjects/SimpleWeatherApp/app/src/main/res/drawable/ic_03dn.xml" value="0.202" />
+        <entry key="..\:/Users/Danissimmo/AndroidStudioProjects/SimpleWeatherApp/app/src/main/res/drawable/ic_04dn.xml" value="0.202" />
+        <entry key="..\:/Users/Danissimmo/AndroidStudioProjects/SimpleWeatherApp/app/src/main/res/drawable/ic_09dn.xml" value="0.202" />
+        <entry key="..\:/Users/Danissimmo/AndroidStudioProjects/SimpleWeatherApp/app/src/main/res/drawable/ic_10d.xml" value="0.202" />
+        <entry key="..\:/Users/Danissimmo/AndroidStudioProjects/SimpleWeatherApp/app/src/main/res/drawable/ic_10n.xml" value="0.202" />
+        <entry key="..\:/Users/Danissimmo/AndroidStudioProjects/SimpleWeatherApp/app/src/main/res/drawable/ic_11dn.xml" value="0.202" />
+        <entry key="..\:/Users/Danissimmo/AndroidStudioProjects/SimpleWeatherApp/app/src/main/res/drawable/ic_13dn.xml" value="0.202" />
+        <entry key="..\:/Users/Danissimmo/AndroidStudioProjects/SimpleWeatherApp/app/src/main/res/drawable/ic_50dn.xml" value="0.202" />
+        <entry key="..\:/Users/Danissimmo/AndroidStudioProjects/SimpleWeatherApp/app/src/main/res/drawable/ic__1d.xml" value="0.202" />
+        <entry key="..\:/Users/Danissimmo/AndroidStudioProjects/SimpleWeatherApp/app/src/main/res/drawable/ic_drop.xml" value="0.202" />
+        <entry key="..\:/Users/Danissimmo/AndroidStudioProjects/SimpleWeatherApp/app/src/main/res/drawable/ic_flag_24.xml" value="0.202" />
+        <entry key="..\:/Users/Danissimmo/AndroidStudioProjects/SimpleWeatherApp/app/src/main/res/drawable/ic_settings_24.xml" value="0.228" />
+        <entry key="..\:/Users/Danissimmo/AndroidStudioProjects/SimpleWeatherApp/app/src/main/res/drawable/ic_sunset.xml" value="0.228" />
+        <entry key="..\:/Users/Danissimmo/AndroidStudioProjects/SimpleWeatherApp/app/src/main/res/drawable/ic_sunvise.xml" value="0.228" />
+        <entry key="..\:/Users/Danissimmo/AndroidStudioProjects/SimpleWeatherApp/app/src/main/res/font/amaranth.xml" value="0.284375" />
+        <entry key="..\:/Users/Danissimmo/AndroidStudioProjects/SimpleWeatherApp/app/src/main/res/layout-land/activity_main.xml" value="0.21516754850088182" />
+        <entry key="..\:/Users/Danissimmo/AndroidStudioProjects/SimpleWeatherApp/app/src/main/res/layout/activity_initial.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Danissimmo/AndroidStudioProjects/SimpleWeatherApp/app/src/main/res/layout/activity_main.xml" value="0.4" />
+        <entry key="..\:/Users/Danissimmo/AndroidStudioProjects/SimpleWeatherApp/app/src/main/res/layout/activity_menu.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Danissimmo/AndroidStudioProjects/SimpleWeatherApp/app/src/main/res/layout/activity_settings.xml" value="0.25" />
+        <entry key="..\:/Users/Danissimmo/AndroidStudioProjects/SimpleWeatherApp/app/src/main/res/layout/activity_settings2.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Danissimmo/AndroidStudioProjects/SimpleWeatherApp/app/src/main/res/layout/fragment_daily_list.xml" value="0.264" />
+        <entry key="..\:/Users/Danissimmo/AndroidStudioProjects/SimpleWeatherApp/app/src/main/res/layout/fragment_day_info.xml" value="0.264" />
+        <entry key="..\:/Users/Danissimmo/AndroidStudioProjects/SimpleWeatherApp/app/src/main/res/layout/item_city_lists.xml" value="0.264" />
+        <entry key="..\:/Users/Danissimmo/AndroidStudioProjects/SimpleWeatherApp/app/src/main/res/layout/item_main_daily.xml" value="0.264" />
+        <entry key="..\:/Users/Danissimmo/AndroidStudioProjects/SimpleWeatherApp/app/src/main/res/layout/item_main_hourly.xml" value="0.536" />
+        <entry key="..\:/Users/Danissimmo/AndroidStudioProjects/SimpleWeatherApp/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.202" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Embedded JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>
