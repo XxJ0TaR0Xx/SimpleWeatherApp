@@ -1,23 +1,17 @@
 package com.l_volkov_l.simpleweatherapp
 
-import android.annotation.SuppressLint
-import android.app.Activity
+
 import android.content.Context
-import android.content.Intent
 import android.content.SharedPreferences
 import android.os.Bundle
 import android.util.Log
 import android.view.View
 import android.view.animation.Animation
 import android.view.animation.AnimationUtils
-import android.widget.CompoundButton
-import android.widget.Switch
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.app.AppCompatDelegate
-import androidx.appcompat.widget.SwitchCompat
 import com.google.android.material.button.MaterialButtonToggleGroup
 import com.l_volkov_l.simpleweatherapp.view.SettingsHolder
-import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.android.synthetic.main.activity_settings.*
 import kotlinx.android.synthetic.main.activity_settings.view.*
 
@@ -120,6 +114,8 @@ class SettingsActivity : AppCompatActivity() {
 
 
     }
+
+    //Вот тут что-то изменил
 
 
     private object YourselfTheme : MaterialButtonToggleGroup.OnButtonCheckedListener {
