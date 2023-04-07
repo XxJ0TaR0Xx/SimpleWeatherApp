@@ -2,9 +2,10 @@ package com.l_volkov_l.simpleweatherapp
 
 import android.app.Application
 import android.content.Intent
+import androidx.appcompat.app.AppCompatDelegate
+import androidx.appcompat.app.AppCompatDelegate.MODE_NIGHT_FOLLOW_SYSTEM
 import androidx.room.Room
 import com.l_volkov_l.simpleweatherapp.business.room.OpenWeatherDatabase
-import com.l_volkov_l.simpleweatherapp.business.room.WeatherDao
 import com.l_volkov_l.simpleweatherapp.view.SettingsHolder
 
 

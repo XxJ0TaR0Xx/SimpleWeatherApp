@@ -2,7 +2,6 @@ package com.l_volkov_l.simpleweatherapp
 
 
 import android.content.Context
-import android.content.SharedPreferences
 import android.os.Bundle
 import android.util.Log
 import android.view.View
@@ -13,22 +12,36 @@ import androidx.appcompat.app.AppCompatDelegate
 import com.google.android.material.button.MaterialButtonToggleGroup
 import com.l_volkov_l.simpleweatherapp.view.SettingsHolder
 import kotlinx.android.synthetic.main.activity_settings.*
-import kotlinx.android.synthetic.main.activity_settings.view.*
 
 
 const val SET = "Set"
+const val SWITCH_STATE = "switchState"
+const val FIVE_STATE = "fiveState"
+const val DAY= "day"
+const val NIGHT = "night"
 
 
 class SettingsActivity : AppCompatActivity() {
 
+    private val sharedPreferences by lazy {
+        getSharedPreferences("mySharedPreferences", Context.MODE_PRIVATE)
+    }
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_settings)
 
+
+        switch1.isChecked = sharedPreferences.getBoolean(SWITCH_STATE, false)
+        five.visibility = sharedPreferences.getInt(FIVE_STATE, 0)
+        day.isChecked = sharedPreferences.getBoolean(DAY, false)
+        night.isChecked = sharedPreferences.getBoolean(NIGHT, false)
+
+
         inner_toolbar.setNavigationOnClickListener { onBackPressed() }
 
         setSavedSettings()
+
 
         listOf(groupTemp, groupSpeed, groupPressure).forEach {
             it.addOnButtonCheckedListener(
@@ -36,6 +49,15 @@ class SettingsActivity : AppCompatActivity() {
             )
         }
         checkTheme()
+
+    }
+
+    override fun onPause() {
+        super.onPause()
+        sharedPreferences.edit().putBoolean(SWITCH_STATE, switch1.isChecked).apply()
+        sharedPreferences.edit().putInt(FIVE_STATE, five.visibility).apply()
+        sharedPreferences.edit().putBoolean(DAY, day.isChecked).apply()
+        sharedPreferences.edit().putBoolean(NIGHT, night.isChecked).apply()
     }
 
     override fun onDestroy() {
@@ -74,37 +96,25 @@ class SettingsActivity : AppCompatActivity() {
 
 
     // ----------------Theme----------------
-    ///TODO - УБЕРИ ЭТО ОТСЮДА sharedPreferences
-
-    private fun checkTheme(){
+    private fun checkTheme() {
         val animationUp:Animation = AnimationUtils.loadAnimation(this, R.anim.slide_up)
         val animationDown = AnimationUtils.loadAnimation(this, R.anim.slide_down)
-        val sharedPreferences: SharedPreferences = getSharedPreferences("MyPreferences", Context.MODE_PRIVATE)
-        val editor = sharedPreferences.edit()
 
 
-        five.apply {
-            visibility = View.INVISIBLE
-        }
-
-        switch1.setOnCheckedChangeListener { _, isChecked ->
-            if (isChecked) {
-                // Включить автомат смена
+        ///Выбор темы приложения (авто или нет)
+        switch1.setOnCheckedChangeListener { _, _ ->
+            if (switch1.isChecked) {
                 five.apply {
-                    visibility = View.INVISIBLE
                     startAnimation(animationDown)
-                    AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_FOLLOW_SYSTEM)
-                    editor.putBoolean("switch_value", switch1.isChecked).apply()
-                    Log.d(TAG, "Switch - ON")
+                    visibility = View.INVISIBLE
+                    Log.d(SET, "Switch - ON")
                 }
             } else {
-                // Включить самост выб
                 five.apply {
-                    visibility = View.VISIBLE
                     startAnimation(animationUp)
-                    editor.putBoolean("switch_value", switch1.isChecked).apply()
+                    visibility = View.VISIBLE
+                    Log.d(SET, "Switch - OFF")
                 }
-                Log.d(TAG, "Switch - OFF")
             }
         }
 
@@ -113,9 +123,9 @@ class SettingsActivity : AppCompatActivity() {
         )
 
 
-    }
 
-    //Вот тут что-то изменил
+
+    }
 
 
     private object YourselfTheme : MaterialButtonToggleGroup.OnButtonCheckedListener {
@@ -124,12 +134,14 @@ class SettingsActivity : AppCompatActivity() {
             checkedId: Int,
             isChecked: Boolean
         ) {
-            Log.d(SET,"YourselfTheme:$checkedId")
             when (checkedId){
-                R.id.night -> AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_YES)
-                R.id.day -> AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO)
+                R.id.night -> {
+                    AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_YES)
+                }
+                R.id.day -> {
+                    AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO)
+                }
             }
-
         }
     }
 
