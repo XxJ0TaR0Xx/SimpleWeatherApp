@@ -1,10 +1,12 @@
 package com.l_volkov_l.simpleweatherapp.view
 
 import android.content.SharedPreferences
-import android.provider.Contacts.Settings.getSetting
+import android.util.Log
 import androidx.annotation.IdRes
 import androidx.appcompat.app.AppCompatDelegate
+import com.l_volkov_l.simpleweatherapp.DAY
 import com.l_volkov_l.simpleweatherapp.R
+import com.l_volkov_l.simpleweatherapp.SET
 import java.util.*
 import kotlin.math.roundToInt
 
@@ -12,7 +14,8 @@ import kotlin.math.roundToInt
 const val TEMP = "Temp"
 const val WIND_SPEED = "Wind speed"
 const val PRESSURE = "Pressure"
-const val THEME = "Theme"
+
+
 
 
 ///TODO сохраняй данные тута
@@ -78,12 +81,10 @@ object SettingsHolder {
             override fun getValue(initValue: Double) = valueToString { initValue }
         };
 
-
         abstract fun getValue(initValue: Double): String
 
         protected fun valueToString(formula: () -> Double) = formula().roundToInt().toString()
     }
-
 
 }
 

@@ -20,7 +20,7 @@
             android:layout_height="?attr/actionBarSize"
             android:background="@color/bg_bottom_sheet"
             app:navigationIcon="@drawable/ic_arrow_back_screen"
-            app:navigationIconTint="@android:color/black"
+            app:navigationIconTint="@color/text_color"
             app:title="@string/settings" />
     </com.google.android.material.appbar.AppBarLayout>
 
@@ -234,7 +234,7 @@
     <FrameLayout
         android:id="@+id/fourth"
         android:layout_width="match_parent"
-        android:layout_height="45dp"
+        android:layout_height="wrap_content"
         android:layout_margin="16dp"
         android:background="@drawable/bg_settings_theme_top"
         android:orientation="horizontal"
@@ -248,15 +248,37 @@
             android:text="@string/chooseSystems"
             android:textColor="@color/text_color" />
 
-        <androidx.appcompat.widget.SwitchCompat
-            android:id="@+id/switch1"
-            android:layout_width="60dp"
+        <com.google.android.material.button.MaterialButtonToggleGroup
+            android:id="@+id/groupDayNight"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_gravity="end"
             android:layout_marginTop="8dp"
             android:layout_marginEnd="16dp"
             android:layout_marginBottom="4dp"
-            android:layout_gravity="end"
-            tools:ignore="UseSwitchCompatOrMaterialXml" />
+            app:selectionRequired="true"
+            app:singleSelection="true">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/day"
+                style="?attr/materialButtonOutlinedStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:tag="day"
+                android:text="@string/daySetting"
+                android:textAllCaps="false"/>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/night"
+                style="?attr/materialButtonOutlinedStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:tag="night"
+                android:text="@string/nightSetting"
+                android:textAllCaps="false"/>
+
+
+        </com.google.android.material.button.MaterialButtonToggleGroup>
 
 <!--        <com.google.android.material.button.MaterialButtonToggleGroup-->
 <!--            android:id="@+id/systemsChoose"-->
@@ -292,56 +314,6 @@
     </FrameLayout>
 
 
-    <FrameLayout
-        android:id="@+id/five"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginEnd="16dp"
-        android:background="@drawable/bg_settings_theme_down"
-        android:orientation="horizontal"
-        app:layout_constraintTop_toBottomOf="@+id/fourth">
 
-        <com.google.android.material.textview.MaterialTextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_vertical"
-            android:layout_marginStart="16dp"
-            android:text="@string/chooseYourself"
-            android:textColor="@color/text_color" />
-
-        <com.google.android.material.button.MaterialButtonToggleGroup
-            android:id="@+id/groupDayNight"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="end"
-            android:layout_marginTop="8dp"
-            android:layout_marginEnd="16dp"
-            android:layout_marginBottom="4dp"
-            app:selectionRequired="true"
-            app:singleSelection="true">
-
-            <com.google.android.material.button.MaterialButton
-                android:id="@+id/day"
-                style="?attr/materialButtonOutlinedStyle"
-                android:layout_width="wrap_content"
-                android:layout_height="40dp"
-                android:tag="day"
-                android:text="@string/daySetting"
-                android:textAllCaps="false"/>
-
-            <com.google.android.material.button.MaterialButton
-                android:id="@+id/night"
-                style="?attr/materialButtonOutlinedStyle"
-                android:layout_width="wrap_content"
-                android:layout_height="40dp"
-                android:tag="night"
-                android:text="@string/nightSetting"
-                android:textAllCaps="false"/>
-
-
-        </com.google.android.material.button.MaterialButtonToggleGroup>
-
-    </FrameLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

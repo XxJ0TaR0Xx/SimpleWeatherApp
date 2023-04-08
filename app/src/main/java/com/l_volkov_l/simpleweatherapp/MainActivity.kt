@@ -1,13 +1,16 @@
 package com.l_volkov_l.simpleweatherapp
 
 import android.annotation.SuppressLint
+import android.content.Context
 import android.content.Intent
 import android.content.IntentSender
 import android.graphics.Point
 import android.location.Location
 import android.os.Bundle
+import android.preference.PreferenceManager
 import android.util.Log
 import android.widget.Toast
+import androidx.appcompat.app.AppCompatDelegate
 import androidx.coordinatorlayout.widget.CoordinatorLayout
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.google.android.gms.common.api.ResolvableApiException
@@ -32,6 +35,7 @@ class MainActivity : MvpAppCompatActivity(), MainView {
 
     private val mainPresenter by moxyPresenter { MainPresenter() }
 
+
     // Наши геоданные
     private val geoService by lazy { LocationServices.getFusedLocationProviderClient(this) }
     private val tokenSource: CancellationTokenSource = CancellationTokenSource()
@@ -51,6 +55,7 @@ class MainActivity : MvpAppCompatActivity(), MainView {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+
 
         checkGeoAvailability()
         initBottomSheets()
@@ -232,6 +237,8 @@ class MainActivity : MvpAppCompatActivity(), MainView {
             }
         }
     }
+
+
 
 
 }

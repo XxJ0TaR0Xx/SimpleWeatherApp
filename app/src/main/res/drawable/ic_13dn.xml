@@ -7,45 +7,45 @@
       android:strokeWidth="1"
       android:pathData="M11.111,9.474L8,10.737V13.895L11.111,15.158L14.222,13.895V10.737L11.111,9.474Z"
       android:fillColor="#00000000"
-      android:strokeColor="#000000"/>
+      android:strokeColor="@color/text_color"/>
   <path
       android:strokeWidth="1"
       android:pathData="M8.5,11L1,5"
       android:fillColor="#00000000"
-      android:strokeColor="#000000"/>
+      android:strokeColor="@color/text_color"/>
   <path
       android:strokeWidth="1"
       android:pathData="M5.667,5.053V8.842H1"
       android:fillColor="#00000000"
-      android:strokeColor="#000000"/>
+      android:strokeColor="@color/text_color"/>
   <path
       android:strokeWidth="1"
       android:pathData="M11.111,15.158V18.947M11.111,18.947L7.222,21.474M11.111,18.947V24M11.111,18.947L15,21.474"
       android:fillColor="#00000000"
-      android:strokeColor="#000000"/>
+      android:strokeColor="@color/text_color"/>
   <path
       android:strokeWidth="1"
       android:pathData="M11.111,8.842V5.053M11.111,0V5.053M11.111,5.053L14.222,1.895M11.111,5.053L8,1.895"
       android:fillColor="#00000000"
-      android:strokeColor="#000000"/>
+      android:strokeColor="@color/text_color"/>
   <path
       android:strokeWidth="1"
       android:pathData="M11.111,8.211V9.474"
       android:fillColor="#00000000"
-      android:strokeColor="#000000"/>
+      android:strokeColor="@color/text_color"/>
   <path
       android:strokeWidth="1"
       android:pathData="M14,11L16.8,8.6M21,5L16.8,8.6M16.8,8.6H21M16.8,8.6V5"
       android:fillColor="#00000000"
-      android:strokeColor="#000000"/>
+      android:strokeColor="@color/text_color"/>
   <path
       android:strokeWidth="1"
       android:pathData="M14,14L16.909,15.6M21.273,18L16.909,15.6M16.909,15.6L22,14.667M16.909,15.6L18.364,20"
       android:fillColor="#00000000"
-      android:strokeColor="#000000"/>
+      android:strokeColor="@color/text_color"/>
   <path
       android:strokeWidth="1"
       android:pathData="M8,14L5.242,16.101M1,19.333L5.2,16.133M5.2,16.133V20L5.242,16.101M5.2,16.133L5.242,16.101M1,15.333L5.2,16"
       android:fillColor="#00000000"
-      android:strokeColor="#000000"/>
+      android:strokeColor="@color/text_color"/>
 </vector>

@@ -27,6 +27,7 @@
 
         </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
 
+
         <com.google.android.material.button.MaterialButton
             android:id="@+id/main_menu_btn"
             style="@style/IconButton"
@@ -92,7 +93,8 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHeight_percent="0.3"
             app:layout_constraintWidth_percent="0.4"
-            tools:src="@mipmap/clouod3" />
+            tools:src="@mipmap/clouod3"
+            app:tint="@color/text_color" />
 
 
         <ImageView
